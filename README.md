@@ -1,13 +1,10 @@
 # friend-finder
 
-# liri-node-app
-
 ## Description
-### 
+### Incomplete friend finder app based on survey input.
 
 ## Notes
 * External node packages are required. Run npm install in the folder to install all necessary packages
-* The spotify-this-song command will not work unless you provide your own api-key.
 
 Technologies Used |
 :---------:
