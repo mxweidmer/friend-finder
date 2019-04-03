@@ -1,13 +1,17 @@
 var express = require("express");
 
-var app = express();
+var path = require("path");
 
-app.use(express.static('public'));
+var htmlRouter = express.Router();
 
-app.get("/", function (req, res) {
-    res.sendFile("home.html");
-});
 
-app.get("/survey", function (req, res) {
-    res.sendFile("survey.html");
-});
+htmlRouter.get("/", function (req, res) {
+    res.sendFile(path.join(__dirname, "../public/home.html"));
+})
+
+htmlRouter.get("/survey", function (req, res) {
+    res.sendFile(path.join(__dirname, "../public/survey.html"));
+})
+
+
+module.exports = htmlRouter;
